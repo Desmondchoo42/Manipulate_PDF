@@ -4,6 +4,8 @@
 
 This script utilizes the package Streamlit and PDFRW to add watermark, remove metadata or concatenate PDF or Document (Doc/Docx) and outputting them either into individual PDF or one single PDF (if concatenation option is chosen).  
 
+For full code, please refer to [https://github.com/Desmondchoo42/PDF-Manipulation-Streamlit]
+
 ## How to use
 * Main Package
   * Streamlit
