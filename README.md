@@ -23,6 +23,8 @@ For full code, please click [here](https://github.com/Desmondchoo42/PDF-Manipula
   * Concatenation vs non-concatenation
     * If concatenation option is selected, all PDFs will be save into one PDF call "Annex.pdf" in the prescribed output path
     * If not, individual PDF will be outputted as "Annex 1.pdf, Annex 2.pdf, ..., Annex X.pdf"    
+  * Remove blank pages or pages that contain certain words or phrases
+    * If either option is selected, pages with such characteristic will be removed
 
 ## Possible improvement in the future
 * File types
