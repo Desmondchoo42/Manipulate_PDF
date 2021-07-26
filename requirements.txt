@@ -1,0 +1,10 @@
+streamlit==0.82.0
+pdfrw==0.4
+pathlib=*
+os=*
+glob=*
+PIL=*
+numpy==1.18.5
+comtypes==1.1.10
+io=*
+pdfminer=*
