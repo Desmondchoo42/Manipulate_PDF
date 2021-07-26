@@ -98,7 +98,7 @@ def load_image(img):
     image = np.array(im)
     return image
 
-st.image(load_image(os.getcwd()+"\Title.png"))
+st.image(load_image(os.getcwd()+"/Title.png"))
 st.write("##")
 
 st.subheader("Choose Options")
