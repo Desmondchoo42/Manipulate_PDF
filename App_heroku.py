@@ -139,10 +139,11 @@ def main():
 
     status_text.text("In progress... Please Wait.")
 
-    ## Checking the output directory
-    if not os.path.exists('output_path'):
-        os.makedirs('output_path')
-    status_text.text("Output path checked okay. Proceeding to next step...")
+    ## Making sure that all residue annex files were deleted in the inetrmediate folder
+    filepath_todel = find_ext(os.getcwd()+"/Intermediate_Data","pdf")
+        for file in filepath_todel:
+            os.remove(file)    
+    status_text.text("Files in Intermediate folder deleted. Proceeding to next step...")
 
     ## Define the reader and writer objects
 
