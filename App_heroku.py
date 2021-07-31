@@ -109,7 +109,7 @@ def find_ext(dr, ext):
 ####################    Streamlit  ####################
 
 
-st.image(load_image(os.getcwd()+"\Title.png"))
+st.image(load_image(os.getcwd()+"/Title.png"))
 st.write("##")
 
 st.subheader("Choose Options")
@@ -210,8 +210,8 @@ def main():
             )
 
         if "Concatenate PDFs" not in config_select_manipulation:
-            html = create_download_link(writer, "test")
-            st.markdown(html, unsafe_allow_html=True)
+            writer.write(os.getcwd()+"/Intermediate_Data/"+"Annex "+str(i+1)+".pdf")
+            writer = PdfWriter()
 
 
         status_text.text(f"{file} completed...")
@@ -222,7 +222,7 @@ def main():
         st.balloons()
     else:
         # write the modified content to disk
-        writer.write(os.getcwd()+"\Intermediate_Data\Annex.pdf")
+        writer.write(os.getcwd()+"/Intermediate_Data/Annex.pdf")
 
     st.balloons()
 
@@ -230,7 +230,7 @@ def main():
 
     zipObj = ZipFile("download.zip", "w")
     # Add multiple files to the zip
-    filepath = find_ext(os.getcwd()+"\Intermediate_Data","pdf")
+    filepath = find_ext(os.getcwd()+"/Intermediate_Data","pdf")
     for file in filepath:
         zipObj.write(file)
     # close the Zip File
