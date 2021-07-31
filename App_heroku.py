@@ -141,8 +141,8 @@ def main():
 
     ## Making sure that all residue annex files were deleted in the inetrmediate folder
     filepath_todel = find_ext(os.getcwd()+"/Intermediate_Data","pdf")
-        for file in filepath_todel:
-            os.remove(file)    
+    for file in filepath_todel:
+        os.remove(file)    
     status_text.text("Files in Intermediate folder deleted. Proceeding to next step...")
 
     ## Define the reader and writer objects
